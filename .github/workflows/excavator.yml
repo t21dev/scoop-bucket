@@ -1,0 +1,22 @@
+# Checks every manifest's `checkver` on a schedule and commits updates
+# (new version, URL and hash from SHA256SUMS.txt). No change is needed in
+# the app repos: a GitHub release is picked up within the hour.
+name: Excavator
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  excavate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Excavate
+        uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SKIP_UPDATED: "1"
