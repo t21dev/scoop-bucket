@@ -1,13 +1,13 @@
 {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Reclaim disk and memory from developer caches, build folders, AI models, processes and ports.",
     "homepage": "https://github.com/TriptoAfsin/dev-cleaner",
     "license": "MIT",
     "notes": "Dev Cleaner runs in portable mode under Scoop: settings live in $persist_dir\\data and survive updates.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TriptoAfsin/dev-cleaner/releases/download/v0.1.0/Dev.Cleaner_0.1.0_x64_portable.zip",
-            "hash": "3844ec733c1e696d46cbfb821848a7228dd87be11514df0d9a3c96f51078109b"
+            "url": "https://github.com/TriptoAfsin/dev-cleaner/releases/download/v0.2.0/Dev.Cleaner_0.2.0_x64_portable.zip",
+            "hash": "3e3ae3005c557932b2ad345a600d5854f925e3892e562dbfec8390cc4f64b8fb"
         }
     },
     "extract_dir": "Dev Cleaner",
