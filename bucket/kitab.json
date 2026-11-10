@@ -1,5 +1,5 @@
 {
-    "version": "0.3.6",
+    "version": "0.3.7",
     "description": "A fast, native reader for PDF, ebooks, comics and Markdown. Rust and GPUI, pages by MuPDF.",
     "homepage": "https://github.com/t21dev/kitab",
     "license": "AGPL-3.0-or-later",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/t21dev/kitab/releases/download/v0.3.6/Kitab_0.3.6_x64_portable.zip",
-            "hash": "a6a488dafcc016801991c627a163abf7a3054dab16a33717a8bc45c01d7df196"
+            "url": "https://github.com/t21dev/kitab/releases/download/v0.3.7/Kitab_0.3.7_x64_portable.zip",
+            "hash": "d50ed6957966e350d0eb833bc79471d6d6f0c98e97bc31e7bbb7c9b1d173d831"
         }
     },
     "extract_dir": "Kitab",
