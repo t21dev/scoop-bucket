@@ -1,5 +1,5 @@
 {
-    "version": "0.8.4",
+    "version": "0.8.5",
     "description": "Port monitor: see which process holds a port, and stop it in one click.",
     "homepage": "https://porter.t21.dev",
     "license": "MIT",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/t21dev/porter-app/releases/download/v0.8.4/Porter_0.8.4_x64_portable.zip",
-            "hash": "5c8c5f645b7c75044af82f4dd3ba50e44bfbf85dd07be00eb855ad830e64a407"
+            "url": "https://github.com/t21dev/porter-app/releases/download/v0.8.5/Porter_0.8.5_x64_portable.zip",
+            "hash": "7353acf7d43673f318dfecddca5facdfe8e978fed8a483dfed6f68444b5c69c5"
         }
     },
     "extract_dir": "Porter",
