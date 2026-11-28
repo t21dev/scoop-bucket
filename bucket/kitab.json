@@ -1,11 +1,13 @@
 {
     "version": "1.7.1",
     "description": "A fast, native reader for PDF, ebooks, comics and Markdown. Rust and GPUI, pages by MuPDF.",
-    "homepage": "https://github.com/t21dev/kitab",
+    "homepage": "https://kitab.t21.dev",
     "license": "AGPL-3.0-or-later",
     "notes": [
         "Kitab runs in portable mode under Scoop: your library and settings live in",
-        "$persist_dir\\data and survive updates."
+        "$persist_dir\\data and survive updates.",
+        "The kitab command opens files in Kitab, and runs its tools (kitab help).",
+        "Quit Kitab before `scoop update kitab`."
     ],
     "architecture": {
         "64bit": {
@@ -14,7 +16,12 @@
         }
     },
     "extract_dir": "Kitab",
-    "bin": "kitab.exe",
+    "bin": [
+        [
+            "bin\\kitab.exe",
+            "kitab"
+        ]
+    ],
     "shortcuts": [
         [
             "kitab.exe",
@@ -22,6 +29,14 @@
         ]
     ],
     "persist": "data",
+    "uninstaller": {
+        "script": [
+            "# Uninstalling (not updating): file types and right-click tools that open this copy come off.",
+            "if ($cmd -eq 'uninstall') {",
+            "    Start-Process -FilePath \"$dir\\kitab.exe\" -ArgumentList '--unregister' -Wait -WindowStyle Hidden -ErrorAction SilentlyContinue",
+            "}"
+        ]
+    },
     "checkver": {
         "github": "https://github.com/t21dev/kitab"
     },

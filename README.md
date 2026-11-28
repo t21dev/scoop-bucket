@@ -13,7 +13,7 @@ scoop install t21dev/kitab
 | App | What it is |
 | --- | --- |
 | `turbo-reader` | [Turbo Reader](https://turbo-reader.t21.dev), a fast, small RSS reader. Adds a `turbo-reader` command, so `turbo-reader --mcp` works for AI agents. |
-| `kitab` | [Kitab Reader](https://github.com/t21dev/kitab), a fast, native reader for PDF, ebooks and Markdown. Adds a `kitab` command. |
+| `kitab` | [Kitab Reader](https://kitab.t21.dev), a fast, native reader for PDF, ebooks, comics and Markdown. Adds a `kitab` command: `kitab report.pdf` opens it, `kitab help` lists the tools. |
 | `porter` | [Porter](https://porter.t21.dev), see which process holds a port and stop it. |
 | `dev-cleaner` | [Dev Cleaner](https://github.com/TriptoAfsin/dev-cleaner), reclaim disk and memory from developer caches, build folders, AI models and ports. Runs portable; settings persist across updates. |
 
